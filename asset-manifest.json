@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.52762df1.css",
+    "main.js": "/portfolio/static/js/main.7004a61b.js",
+    "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
+    "static/media/bg-light.png": "/portfolio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/revise-tes-maths.png": "/portfolio/static/media/revise-tes-maths.11ea8253089c22136b8b.png",
+    "static/media/massyl.jpeg": "/portfolio/static/media/massyl.2c1ded3f3a8002d91615.jpeg",
+    "index.html": "/portfolio/index.html",
+    "main.52762df1.css.map": "/portfolio/static/css/main.52762df1.css.map",
+    "main.7004a61b.js.map": "/portfolio/static/js/main.7004a61b.js.map",
+    "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52762df1.css",
+    "static/js/main.7004a61b.js"
+  ]
+}
