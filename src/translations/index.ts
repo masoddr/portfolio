@@ -146,8 +146,25 @@ export const translations: Translations = {
           company: 'Airbus Defence and Space',
           description: 'Développement d\'un simulateur de distribution de clé quantique par satellite\nPython, Git, Linux, Télécommunications spatiales, Physique quantique, Orbitographie',
           date: 'Août 2023 - Octobre 2024'
+        },
+        {
+          title: 'Ingénieur Satcom',
+          company: 'CNES',
+          description: 'Support technique plateforme CESARS\nTests de performances antennes et modules IoT, Scripts Python & Bash',
+          date: 'Novembre 2022 - Juillet 2023'
+        },
+        {
+          title: 'Développeur logiciel',
+          company: 'DGA Techniques Aéronautiques',
+          description: 'Développement d\'outils pour essais CEM et Foudre\nJava, Git, PostgreSQL',
+          date: 'Février 2022 - Novembre 2022'
+        },
+        {
+          title: 'Développeur logiciel',
+          company: 'CNES',
+          description: 'Transcription Scilab en VBA pour calculs d\'électromagnétisme\nVBA, Scilab, Excel',
+          date: 'Novembre 2021 - Février 2022'
         }
-        // ... autres positions
       ]
     },
     projects: {
@@ -249,8 +266,25 @@ export const translations: Translations = {
           company: 'Airbus Defence and Space',
           description: 'Development of a satellite quantum key distribution simulator\nPython, Git, Linux, Space Telecommunications, Quantum Physics, Orbital Mechanics',
           date: 'August 2023 - October 2024'
+        },
+        {
+          title: 'Satcom Engineer',
+          company: 'CNES',
+          description: 'Technical support for CESARS platform\nAntenna and IoT modules performance testing, Python & Bash Scripts',
+          date: 'November 2022 - July 2023'
+        },
+        {
+          title: 'Software Developer',
+          company: 'DGA Aeronautical Techniques',
+          description: 'Development of tools for EMC and Lightning tests\nJava, Git, PostgreSQL',
+          date: 'February 2022 - November 2022'
+        },
+        {
+          title: 'Software Developer',
+          company: 'CNES',
+          description: 'Scilab to VBA transcription for electromagnetic calculations\nVBA, Scilab, Excel',
+          date: 'November 2021 - February 2022'
         }
-        // ... other positions
       ]
     },
     projects: {
