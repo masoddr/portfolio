@@ -15,13 +15,24 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 const drawerWidth = 240;
-const navItems = [['Compétences', 'expertise'], ['Expériences', 'history'], ['Projets', 'projects'], ['Contact', 'contact']];
+
+const getNavItems = (t: any) => [
+  [t.nav.skills, 'expertise'],
+  [t.nav.experiences, 'history'],
+  [t.nav.projects, 'projects'],
+  [t.nav.contact, 'contact']
+];
 
 function Navigation({parentToChild, modeChange}: any) {
 
   const {mode} = parentToChild;
+  const { language, setLanguage } = useLanguage();
+  const t = translations[language];
+  const navItems = getNavItems(t);
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -87,11 +98,33 @@ function Navigation({parentToChild, modeChange}: any) {
           >
             <MenuIcon />
           </IconButton>
-          {mode === 'dark' ? (
-            <LightModeIcon onClick={() => modeChange()}/>
-          ) : (
-            <DarkModeIcon onClick={() => modeChange()}/>
-          )}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+            {mode === 'dark' ? (
+              <LightModeIcon onClick={() => modeChange()}/>
+            ) : (
+              <DarkModeIcon onClick={() => modeChange()}/>
+            )}
+            <Box sx={{ display: 'flex', gap: 1 }}>
+              <Button 
+                onClick={() => setLanguage('fr')}
+                sx={{ 
+                  color: language === 'fr' ? '#5000ca' : '#fff',
+                  fontWeight: language === 'fr' ? 'bold' : 'normal'
+                }}
+              >
+                FR
+              </Button>
+              <Button 
+                onClick={() => setLanguage('en')}
+                sx={{ 
+                  color: language === 'en' ? '#5000ca' : '#fff',
+                  fontWeight: language === 'en' ? 'bold' : 'normal'
+                }}
+              >
+                EN
+              </Button>
+            </Box>
+          </Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
